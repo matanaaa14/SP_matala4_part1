@@ -2,5 +2,7 @@
 #include "Character.hpp"
 #include <iostream>
 namespace ariel{}
-    void Ninja::move(Character* enemy){}
-    void Ninja::slash(Character* enemy){}
+using namespace std;
+    void Ninja::slash(Character* enemy)const{}
+    Ninja::Ninja(string name, Point point) : Character(name,point){}
+    string Ninja::print() const{return "nothing";}

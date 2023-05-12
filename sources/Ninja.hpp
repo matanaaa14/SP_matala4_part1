@@ -11,7 +11,10 @@ class Ninja : public Character{
     protected:
     int speed;
     public:
-    void move(Character* enemy);
-    void slash(Character* enemy);
+    virtual void move(Character* enemy)const = 0;
+    void slash(Character* enemy)const;
+    Ninja(string name, Point point);
+    string print() const;
+
 };
 #endif
