@@ -10,5 +10,7 @@ class Point{
     double distance(Point other);
     void print();
     Point moveTowards(Point source, Point dest, double distance);
+    bool operator==(const Point& other) const;
+
 };
 #endif
